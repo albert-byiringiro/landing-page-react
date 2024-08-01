@@ -1,4 +1,6 @@
+// @ts-ignore
 import navList from "../data/headerNavbar";
+
 import { NavLinks } from "../types/Types";
 const Navbar = () => {
   const navEls = navList.map((nav: NavLinks) => (
