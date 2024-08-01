@@ -1,27 +1,16 @@
-import { nanoid } from "nanoid";
-const navigationList = [
-  "Features",
-  "About",
-  "Services",
-  "Gallery",
-  "Testimonials",
-  "Team",
-  "Contact",
-];
-
-const id = nanoid();
-
+import navList from "../data/headerNavbar";
+import { NavLinks } from "../types/Types";
 const Navbar = () => {
-  const navEls = navigationList.map((nav) => (
-    <li className="uppercase text-gray-600" key={id}>
-      <a href="" className="">
-        {nav}
+  const navEls = navList.map((nav: NavLinks) => (
+    <li className="uppercase text-gray-600" key={nav.id}>
+      <a href={nav.url} className="">
+        {nav.title}
       </a>
     </li>
   ));
 
   return (
-    <header className=" px-4 flex items-center py-6 justify-around">
+    <header className=" px-4 flex items-center py-6 justify-around shadow-md">
       <h1 className="uppercase font-semibold text-gray-900 text-2xl">
         React Landing Page
       </h1>
