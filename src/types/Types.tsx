@@ -12,3 +12,10 @@ export type ServiceType = {
   service: string;
   description: string;
 };
+
+export type FeatureType = {
+  id: string;
+  image: IconProp;
+  feature: string;
+  description: string;
+};
