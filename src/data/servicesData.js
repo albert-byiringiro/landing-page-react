@@ -1,40 +1,49 @@
 import { nanoid } from "nanoid";
+import {
+  faCartArrowDown,
+  faCloudDownload,
+  faLanguage,
+  faPlane,
+  faPieChart,
+} from "@fortawesome/free-solid-svg-icons";
+
+import { faWordpress } from "@fortawesome/free-brands-svg-icons";
 
 
 export default [
   {
     id: nanoid(),
-    image: "fa fa-wordpress",
+    image: faWordpress,
     service: "Lorem ipsum dolor",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.",
   },
   {
     id: nanoid(),
-    image: "fa fa-cart-arrow-down",
+    image: faCartArrowDown,
     service: "Consectetur adipiscing",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.",
   },
   {
     id: nanoid(),
-    image: "fa fa-cloud-download",
+    image: faCloudDownload,
     service: "Lorem ipsum dolor",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.",
   },
   {
     id: nanoid(),
-    image: "fa fa-language",
+    image: faLanguage,
     service: "Consectetur adipiscing",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.",
   },
   {
     id: nanoid(),
-    image: "fa fa-plane",
+    image: faPlane,
     service: "Lorem ipsum dolor",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.",
   },
   {
     id: nanoid(),
-    image: "fa fa-pie-chart",
+    image: faPieChart,
     service: "Consectetur adipiscing",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.",
   },

@@ -1,31 +1,14 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCartArrowDown,
-  faCloudDownload,
-  faLanguage,
-  faPlane,
-  faPieChart,
-} from "@fortawesome/free-solid-svg-icons";
 
-import { faWordpress } from "@fortawesome/free-brands-svg-icons";
-
-// IImport dataset
+// @ts-ignore
 import data from "../data/servicesData";
-
-const iconMap = {
-  "fa fa-wordpress": faWordpress,
-  "fa fa-cart-arrow-down": faCartArrowDown,
-  "fa fa-cloud-download": faCloudDownload,
-  "fa fa-language": faLanguage,
-  "fa fa-plane": faPlane,
-  "fa fa-pie-chart": faPieChart,
-};
+import { ServiceType } from "../types/Types";
 
 const Services = () => {
-  const serviceEls = data.map((service) => (
+  const serviceEls = data.map((service: ServiceType) => (
     <div className="space-y-4 py-8">
       <FontAwesomeIcon
-        icon={iconMap[service.image]}
+        icon={service.image}
         className="rounded-full px-8 py-8 bg-gradient-to-r from-blue-600 to-blue-500 text-white size-8 shadow-md"
       />
       <div className="space-y-2">
